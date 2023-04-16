@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%= title %></title>
+</head>
+<body class="full-screen pt-16">
+<header class="fixed top-0 left-0 right-0 h-16">
+    <%- include('./header.template.ejs') %>
+</header>
+<main load-module="<%= module %>">
+    <%- include(contentPath) %>
+</main>
+<footer>
+    <%- include('./footer.template.ejs') %>
+</footer>
+</body>
+</html>

@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .card {
+        @apply bg-white drop-shadow-md p-4
+    }
+
+    .card--no-padding {
+        @apply bg-white drop-shadow-md
+    }
+}
+
+@layer utilities {
+    .full-screen {
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+*, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
